@@ -10,4 +10,5 @@ import eind.trmsmo.entity.Document;
 @Repository
 public interface DocumentRepository extends JpaRepository<Document, Long> {
     List<Document> findByPatientId(Long patientId);
+    boolean existsByFilename(String filename);
 }

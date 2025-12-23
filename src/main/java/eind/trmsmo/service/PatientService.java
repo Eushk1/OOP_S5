@@ -11,4 +11,6 @@ public interface PatientService {
     Patient save(Patient patient);
     void deleteById(Long id);
     Optional<Patient> findByEmail(String email);
+    boolean existsByEmail(String email);
+    
 }

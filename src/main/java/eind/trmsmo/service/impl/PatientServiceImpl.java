@@ -43,4 +43,8 @@ public class PatientServiceImpl implements PatientService {
     public Optional<Patient> findByEmail(String email) {
         return patientRepository.findByEmail(email);
     }
+    @Override
+    public boolean existsByEmail(String email) {
+        return patientRepository.existsByEmail(email);
+    }
 }

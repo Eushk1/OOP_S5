@@ -13,3 +13,4 @@ public interface ServiceEntityRepository extends JpaRepository<ServiceEntity, Lo
     Optional<ServiceEntity> findByName(String name);
     boolean existsByName(String name);
 }
+
